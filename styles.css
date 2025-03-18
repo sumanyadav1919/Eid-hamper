@@ -212,3 +212,45 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+/* Add these styles to your existing CSS */
+
+/* Hover Effects */
+.product-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.add-to-cart:hover, .view-details:hover {
+    opacity: 0.9;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
