@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #f4e8c1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('images/eid-banner.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #d4a72c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#products {
+    padding: 20px;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.product-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.product-features li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.product-features li::before {
+    content: "✨";
+    margin-right: 10px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.add-to-cart, .buy-now {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart {
+    background-color: #f4e8c1;
+    color: #333;
+}
+
+.buy-now {
+    background-color: #d4a72c;
+    color: #fff;
+}
+
+.add-to-cart:hover {
+    background-color: #e0d4b1;
+}
+
+.buy-now:hover {
+    background-color: #c29522;
+}
+
+/* Premium Product Styling */
+.premium-product {
+    border: 2px solid #d4a72c;
+    background-color: #f9f5e7;
+}
+
+.premium-product .product-title {
+    color: #d4a72c;
+}
+
+.premium-product .product-features li::before {
+    content: "🌟";
+}
+
+.premium-product .buy-now {
+    background-color: #d4a72c;
+    color: #fff;
+}
+
+.premium-product .buy-now:hover {
+    background-color: #c29522;
+}
+
+/* Prestige Product Styling */
+.prestige-product {
+    border: 3px solid #8b7355;
+    background-color: #faf3e0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.prestige-product .product-title {
+    color: #8b7355;
+    font-size: 28px;
+}
+
+.prestige-product .product-features li::before {
+    content: "💎";
+}
+
+.prestige-product .buy-now {
+    background-color: #8b7355;
+    color: #fff;
+}
+
+.prestige-product .buy-now:hover {
+    background-color: #6b5a45;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
